@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Celsius to Fahrenheit</title>
+<style>
+    h1{
+        text-align: center;
+        background-color: black;
+        color: white;
+        font-size:60px;
+
+    }   
+  </style>
+    
+  </head>
+  <body>
+    <h1>Convert Celsius to Fahrenheit</h1>
+    <p><input id="up" onkeyup="convert('C')"> Celsius</p>
+    <p><input id="down" onkeyup="convert('F')"> Fahrenheit</p>
+      <script>
+          function convert (degree){
+          var y;  
+          if (degree=="c"){    
+           y = document.getElementById("up").value * 9 / 5 + 32;
+    document.getElementById("down").value = Math.round(y);
+  }  
+  else {
+
+    y = document.getElementById("down").value -32 * 5 / 9;
+    document.getElementById("up").value = Math.round(y);
+        }
+            
+
+
+            
+          }
+         
+       
+
+
+
+
+      </script>
+  </body>
+
+
+
+
+
+
+
+
+
+
+</html>
